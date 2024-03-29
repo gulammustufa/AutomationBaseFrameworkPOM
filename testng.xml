@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests">
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="api"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+    <test name="Login Test">
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="author" value="Gulammustufa"/>
+        <classes>
+            <class name="login.LoginTests"/>
+        </classes>
+    </test>
+    <test name="Forgot Password Test">
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="author" value="Gulammustufa"/>
+        <classes>
+            <class name="forgotPassword.ForgotPasswordTests"/>
+        </classes>
+    </test>
+    <test name="Dropdown Test">
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="author" value="Janki"/>
+        <classes>
+            <class name="dropdown.DropdownTests"/>
+        </classes>
+    </test>
+    <test name="Key Test">
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="author" value="Gulammustufa"/>
+        <classes>
+            <class name="keys.KeysTests"/>
+        </classes>
+    </test>
+    <test name="Rest Api Test">
+        <parameter name="browserName" value="api"/>
+        <parameter name="author" value="Gulammustufa"/>
+        <classes>
+            <class name="restApi.RestApiTests"/>
+        </classes>
+    </test>
+    <test name="Ip Info Api Test">
+        <parameter name="browserName" value="api"/>
+        <parameter name="author" value="Gulammustufa"/>
+        <classes>
+            <class name="restApi.IpInfoApiTests"/>
+        </classes>
+    </test>
+    <test name="GraphQL Api Test">
+        <parameter name="browserName" value="api"/>
+        <parameter name="author" value="Gulammustufa"/>
+        <classes>
+            <class name="graphQL.GraphQLTests"/>
+        </classes>
+    </test>
+</suite>
