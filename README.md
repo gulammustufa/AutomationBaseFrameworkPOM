@@ -1,9 +1,9 @@
 This project contains basic setup for Automation test cases with Java, TestNG, POM.
 
 Command for running the tests:
-If you want to run with specific env and browser then user below command.
+-    If you want to run with specific env and browser then user below command.
     mvn clean verify -DargLine="-DtestEnv=ppe -Dbrowser=firefox"
-else
+-    else
     mvn clean verify
     - Browser name can be chrome, firefox, edge.
 
